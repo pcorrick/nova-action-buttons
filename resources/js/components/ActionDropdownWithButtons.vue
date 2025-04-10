@@ -30,7 +30,7 @@
                  :is="Button"
                  :data-action-id="action.uriKey"
                  v-html="action.name"
-                 @click="() => handleClick(action)"
+                 @click.stop="() => handleClick(action)"
                  :title="action.name"
                  :disabled="action.authorizedToRun === false"
       >
